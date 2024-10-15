@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+    int arr[30],i,n;
+    printf("Enter number of students in a class:");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("Enter marks of a student:");
+        scanf("%d",&arr[i]);
+
+    }
+    for(i=0;i<n;i++)
+    {
+        arr[0]=arr[0]>arr[i]?arr[0]:arr[i];
+    }
+    printf("Maximum marks among all the students is:%d",arr[0]);
+
+}
