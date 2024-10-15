@@ -1,0 +1,14 @@
+#include <stdio.h>
+int n,m,p,mul;
+int main()
+{
+  printf("enter 1st number:");
+  scanf("%d",&n);
+  printf("enter 2nd number:");
+  scanf("%d",&m);
+  printf("enter 3rd number:");
+  scanf("%d",&p);
+  mul=n*m*p;
+  printf("result: %d",mul);
+  return 0;
+}
