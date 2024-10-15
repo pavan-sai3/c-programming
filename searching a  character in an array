@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main()
+{
+    char arr[10],s;
+    int i,n,flag=1;
+    printf("Enter number of characters:");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("Enter a character:");
+        scanf("%s",&arr[i]);
+
+    }
+    printf("Enter the character to search:");
+    scanf("%s",&s);
+
+    for(i=0;i<n;i++)
+    {
+        if(arr[i]==s)
+        {
+           flag=0;
+        }
+        
+    }
+    if(flag==0)
+    {
+        printf("yes");
+    }
+    else{
+        printf("No");
+    }
+}
