@@ -12,4 +12,5 @@ int main()
         n=n/10;
     }
     printf("reverse number of %d is %d",temp,rev);
+return 0;
 }
