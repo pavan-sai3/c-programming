@@ -11,3 +11,34 @@ int main()
     return 0;
 
 }
+--------------------------------------------------------------------------
+//by taking input from user
+#include <stdio.h>
+int main()
+{
+    int arr[10][10],i,j,n,m;
+    printf("Enter number of rows:");
+    scanf("%d",&n);
+    printf("enter number of columns:");
+    scanf("%d",&m);
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++){
+            printf("Enter values of an array:");
+            scanf("%d",&arr[i][j]);
+
+        }
+
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++){
+            printf("%d ",arr[i][j]);
+
+        }
+        printf("\n");
+        
+    }
+    return 0;
+
+}
