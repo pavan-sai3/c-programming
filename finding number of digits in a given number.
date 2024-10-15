@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    
+  int n,sd=0,temp;
+  printf("Enter a number:");
+  scanf("%d",&n);
+  temp=n;
+  while(n>0)
+  {
+     n=n/10;
+     sd+=1;
+     
+  }
+  printf("Number of digits in %d is:%d",temp,sd);
+}
+  
