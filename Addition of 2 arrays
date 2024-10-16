@@ -1,0 +1,42 @@
+#include<stdio.h>
+int main()
+{
+    int a1[10][10],a2[10][10],a3[10][10],n,m,i,j;
+    printf("Enter number of rows:");
+    scanf("%d",&n);
+    printf("Enter number of columns:");
+    scanf("%d",&m);
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            printf("Enter array1 %d row %d column element:",i,j);
+            scanf("%d",&a1[i][j]);
+        }
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            printf("Enter array2 %d row %d column element:",i,j);
+            scanf("%d",&a2[i][j]);
+        }
+        
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            a3[i][j]=a1[i][j]+a2[i][j];
+        }
+    }
+     for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            printf("%d  ",a3[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
