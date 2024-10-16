@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include<string.h>
+void main()
+{
+    char str1[50],str2[50];
+    int a;
+    printf("Enter a password:");
+    fgets(str1,50,stdin);
+    printf("ReEnter a password:");
+    fgets(str2,50,stdin);
+    a=strcmp(str1,str2);
+    if(a==0)
+    {
+        printf("password is correct");
+    }
+    else
+    { 
+      printf("password is incorrect");   
+    }
+    return 0;
+    
+}
