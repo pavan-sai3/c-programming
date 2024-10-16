@@ -27,3 +27,37 @@ void main()
     }
     
 }
+----------------------------------------------------------------------------------------------
+//how many times the character present
+#include <stdio.h>
+#include <string.h>
+
+void main()
+{
+    char str[50], l;
+    int i, flag = 0;
+    
+    printf("Enter your name: ");
+    scanf("%s", &str);  // No need for '&' with string
+    
+    printf("Enter character to search: ");
+    scanf(" %c", &l);  // Use %c for character input, added a space before %c to handle any leftover newline
+    
+    for(i = 0; i < strlen(str); i++)
+    {
+        if(l == str[i])
+        {
+            flag += 1;
+        }
+    }
+    
+    if(flag > 0)
+    {
+        printf("Yes, it's present %d times.\n", flag);
+    }
+    else
+    {
+        printf("Not present.\n");
+    }
+}
+
