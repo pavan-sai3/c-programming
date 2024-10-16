@@ -1,0 +1,27 @@
+//guess the number
+#include <stdio.h>
+int n=8,g,i;
+int main()
+{
+ for(i=0;i<3;i++)
+{
+  printf("Guess the number:"); 
+  scanf("%d",&g);
+  if(n==g)
+ {
+   printf("yes,u r correct!");
+  }
+ else if(n>g){
+    printf("sorry,number is lesser than actual  number try again\n");
+   }
+  else if(n<g){
+    printf("sorry, number is greater than actual number try again\n");
+   } 
+
+
+  else{
+    printf("sorry,try again\n");
+   }
+}
+return 0;
+}
