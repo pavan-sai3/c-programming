@@ -17,6 +17,5 @@ void main()
     { 
       printf("password is incorrect");   
     }
-    return 0;
     
 }
