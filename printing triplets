@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <string.h>
+#include<stdbool.h>
+int gcd(int,int);
+bool prime(int,int);
+int gcd(int i,int j)
+{
+    int temp;
+    while(j>0)
+    {
+    temp=i;
+    i=j;
+    j=temp%j;
+    }
+    return i;
+}
+bool prime(int i,int j)
+{ 
+    return gcd(i,j)==1;
+    
+}
+void main()
+{
+    int a;
+    printf("Enter range number:");
+    scanf("%d",&a);
+    for(int i=5;i<=a;i++)
+    {
+        for( int j=4;j<i;j++)
+        {
+            for(int k=3;k<j;k++)
+            {
+                if(k*k+j*j==i*i)
+                {
+                    if(prime(i,j) && prime(j,k) && prime(i,j))
+                    {
+                        printf("%d %d %d\n",k,j,i);
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+
